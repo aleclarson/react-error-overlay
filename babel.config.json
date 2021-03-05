@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/react"],
+  "plugins": [
+    "@babel/transform-flow-strip-types",
+    "@babel/syntax-class-properties",
+    [
+      "transform-replace-expressions",
+      {
+        "replace": {
+          "'iframeScript'": "'./iframe-bundle?raw'"
+        }
+      }
+    ]
+  ]
+}
